@@ -14,13 +14,22 @@
             align-items: center;
 
             @media (max-width: 768px) {
-                justify-content: space-between;
+                
                 height: 60px;
             }
+
+            @media (max-width: 1200px) {
+                justify-content: space-between;
+            }
+
         }
 
     &__logo {
-             margin-right: 93px;
+             
+
+             @media (min-width: 1200px) {
+                margin-right: 93px;
+             }
         }
 
     &__logo-accent {
@@ -75,13 +84,15 @@
     &__link {
             display: flex;
             align-items: center;
-            padding-top: 32px;
-            padding-bottom: 32px;
+            
+
+            @media (min-width: 1200px) {
+                padding-top: 32px;
+                    padding-bottom: 32px;
+            }
         }
 
-    &__item:not(:last-child) {
-            margin-right: 50px;
-        }
+    
 
     &__icon {
             margin-right: 10px;
@@ -96,8 +107,15 @@
 
         @media (min-width: 768px) {
             display: flex;
+            flex-direction: column;
+            gap: 10px;
+            
+        }
+
+        @media (min-width: 1200px) {
+            flex-direction: row;
+            gap: 30px;
             margin-left: auto;
-            align-items: center;
         }
 }
 
