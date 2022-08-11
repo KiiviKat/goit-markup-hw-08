@@ -21,6 +21,7 @@
         @media (min-width: 1200px) {
             flex-direction: row;
             justify-content: space-between;
+            flex-wrap: nowrap;
         }
             
         }
